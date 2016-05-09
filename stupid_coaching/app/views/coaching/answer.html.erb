@@ -1,0 +1,11 @@
+
+<h1>Coach answer</h1>
+<% if @question_asked.downcase == "i am going to work right now!" %>
+      <p><%='' %> </p>
+    <% elsif @question_asked.end_with?("?") %>
+      <h1> "Silly question, get dressed and go to work!" </h1>
+    <% else %>
+      <p> "I don't care, get dressed and go to work!" </p>
+    <% end %>
+
+    <%= link_to "ask another question", ask_path %>
