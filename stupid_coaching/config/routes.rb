@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'coaching_controller/answer'
+  get 'answer' => 'coaching_controller#answer'
 
   get 'coaching_controller/ask'
 
